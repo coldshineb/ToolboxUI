@@ -1,0 +1,19 @@
+name: toolbox_ui
+description: "A new Flutter package."
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  get:
+  bitsdojo_window:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
