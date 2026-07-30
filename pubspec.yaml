@@ -12,8 +12,10 @@ dependencies:
     sdk: flutter
   get:
   bitsdojo_window:
+  toolbox_core:
+    path: ../toolbox_core
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.0
+  flutter_lints: ^6.0.0

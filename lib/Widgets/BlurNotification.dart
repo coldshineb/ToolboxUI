@@ -12,7 +12,8 @@ class BlurNotification extends StatefulWidget {
   final VoidCallback onClose;
   final ValueChanged<double> onHeightChanged;
 
-  const BlurNotification({super.key, 
+  const BlurNotification({
+    super.key,
     required this.fadeAnimation,
     required this.slideAnimation,
     required this.title,
