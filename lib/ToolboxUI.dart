@@ -12,7 +12,7 @@ export 'Widgets/FocusableBackground.dart';
 export 'Widgets/KbdIndicator.dart';
 export 'Widgets/KeepAliveWrapper.dart';
 export 'Widgets/LazyLoadIndexedStack.dart';
-export 'Widgets/SidebarItem.dart';
+export 'Widgets/BlurSidebarItem.dart';
 export 'Widgets/BlurMenuItemButton.dart';
 export 'Widgets/settings/SettingInputDialog.dart';
 export 'Widgets/settings/SettingSectionTitle.dart';

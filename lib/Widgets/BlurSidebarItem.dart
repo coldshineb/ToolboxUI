@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class SidebarItem extends StatefulWidget {
+class BlurSidebarItem extends StatefulWidget {
   final IconData icon;
   final String title;
   final bool selected;
@@ -9,7 +9,7 @@ class SidebarItem extends StatefulWidget {
   final double minHeight;
   final Color selectedColor;
 
-  const SidebarItem({
+  const BlurSidebarItem({
     super.key,
     required this.icon,
     required this.title,
@@ -21,10 +21,10 @@ class SidebarItem extends StatefulWidget {
   });
 
   @override
-  State<SidebarItem> createState() => _SidebarItemState();
+  State<BlurSidebarItem> createState() => _BlurSidebarItemState();
 }
 
-class _SidebarItemState extends State<SidebarItem> {
+class _BlurSidebarItemState extends State<BlurSidebarItem> {
   bool _hovered = false;
   bool _pressed = false;
 
