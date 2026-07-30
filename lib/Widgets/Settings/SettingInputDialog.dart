@@ -15,7 +15,7 @@ class SettingInputDialog extends StatelessWidget {
   final SettingInputType inputType;
 
   const SettingInputDialog({
-    Key? key,
+    super.key,
     required this.text,
     this.subtext = '',
     this.hintText = '',
@@ -23,7 +23,7 @@ class SettingInputDialog extends StatelessWidget {
     required this.onChanged,
     required this.onPressed,
     this.inputType = SettingInputType.integer,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -8,13 +8,13 @@ class SettingSwitchItem extends StatelessWidget {
   final GestureTapCallback? onTap;
 
   const SettingSwitchItem({
-    Key? key,
+    super.key,
     required this.text,
     this.subtext = '',
     required this.value,
     required this.onChanged,
     this.onTap,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

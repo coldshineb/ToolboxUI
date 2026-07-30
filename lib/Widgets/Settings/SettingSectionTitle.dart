@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class SettingSectionTitle extends StatelessWidget {
   final String text;
-  const SettingSectionTitle({Key? key, required this.text}) : super(key: key);
+  const SettingSectionTitle({super.key, required this.text});
 
   @override
   Widget build(BuildContext context) {
