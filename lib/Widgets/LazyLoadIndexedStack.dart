@@ -83,13 +83,22 @@ class LazyLoadIndexedStackState extends State<LazyLoadIndexedStack> {
 
   @override
   Widget build(final BuildContext context) {
+    // IndexedStack natively does NOT disable TickerMode for its offstage children.
+    // We must manually wrap them in TickerMode so background animations pause.
+    final tickerWrappedChildren = List<Widget>.generate(_children.length, (i) {
+      return TickerMode(
+        enabled: i == widget.index,
+        child: _children[i],
+      );
+    });
+
     return IndexedStack(
       key: _stackKey,
       index: widget.index,
       alignment: widget.alignment,
       textDirection: widget.textDirection,
       sizing: widget.sizing,
-      children: _children,
+      children: tickerWrappedChildren,
     );
   }
 
