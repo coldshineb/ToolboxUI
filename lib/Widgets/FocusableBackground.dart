@@ -66,11 +66,11 @@ class FocusableBackgroundState extends State<FocusableBackground> {
       ),
     );
 
-    if (widget.actions != null && widget.actions!.isNotEmpty) {
+    if (widget.actions != null) {
       subtree = Actions(actions: widget.actions!, child: subtree);
     }
 
-    if (widget.shortcuts != null && widget.shortcuts!.isNotEmpty) {
+    if (widget.shortcuts != null) {
       subtree = Shortcuts(shortcuts: widget.shortcuts!, child: subtree);
     }
 
